@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Temp Converter</string>
-    <string name="textview">Degrees</string>
-    <string name="degree1">Fahrenheit</string>
-    <string name="degree2">Celsius</string>
+    <string name="fahrenheit">Fahrenheit</string>
+    <string name="celsius">Celsius</string>
 </resources>
