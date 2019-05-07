@@ -6,51 +6,71 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/textview"
-        tools:layout_editor_absoluteX="180dp"
-        tools:layout_editor_absoluteY="16dp" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="40dp"
-        android:text="@string/degree1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/fahrenheit"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/celsiusTextView"
+        app:layout_constraintEnd_toStartOf="@+id/fahrenheitEditText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="15dp"
-        android:text="@string/degree2"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="115dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:text="@string/celsius"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/celsiusTextView"
+        app:layout_constraintEnd_toStartOf="@+id/celsiusTextView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/celsiusTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginBottom="425dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/degree"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/fahrenheitEditText"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
-        android:id="@+id/editText2"
-        android:layout_width="186dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginRight="100dp"
+        android:id="@+id/fahrenheitEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginRight="65dp"
         android:ems="10"
-        android:inputType="number"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        android:autofillHints="" />
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
 
 </android.support.constraint.ConstraintLayout>
